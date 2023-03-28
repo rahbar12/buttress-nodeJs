@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 
 const app = express();
@@ -22,12 +24,7 @@ const cookieParser = require('cookie-parser');
 
 const auth = require('../buttress-nodeJs/src/admin/middleware/auth');
 
-const dotenv = require('dotenv').config();
-
 const fs = require('fs');
-
-
-require('dotenv').config();
 
 app.use(express.static(path.join(__dirname,'/uploads')));
 
