@@ -25,7 +25,7 @@ console.log(moment().format("YYYY-MM-DDTHH:mm:ss"));
 app.use('/', require('./src/api/index').v1routes);
 
 
-const port = process.env.PORT || 3030;
+const port = process.env.PORT || 6060;
 app.listen(port, () => {
     // LoggerOutput.info('Log', `🌏 Express server started at ${port}`);
             console.log('Log', `🌏 Express server started at ${port}`);
